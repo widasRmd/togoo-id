@@ -1,0 +1,104 @@
+/*!
+ * Bootstrap v4.5.0 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+
+.logo-header {
+  width: 115px;
+}
+
+button.btn-register {
+  color: $primary;
+  background-color: #fff;
+  border-radius: 50px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 1px 1px 10px $gray-200;
+
+  &:hover {
+    box-shadow: none;
+    background-color: white;
+    box-shadow: 1px 1px 10px $gray-300;
+
+    img {
+      transform: translate(5px, 0);
+    }
+  }
+
+  img {
+    padding-left: 0.5rem;
+  }
+}
+
+// Header
+header {
+  border-bottom: 1px solid $gray-200;
+  width: 100%;
+  position: relative;
+
+  .navbar {
+    height: 80px;
+
+    ul.navbar-nav {
+      li.nav-item {
+        &.active {
+          a.nav-link {
+            color: $primary;
+            font-weight: 500;
+          }
+        }
+        a {
+          &.nav-link {
+            color: $gray-500;
+            padding-left: 1rem;
+            padding-right: 3rem;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
